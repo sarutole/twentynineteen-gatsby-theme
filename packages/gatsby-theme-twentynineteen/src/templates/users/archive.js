@@ -20,9 +20,7 @@ const AuthorArchive = props => {
       </header>
 
       {posts.nodes &&
-        posts.nodes.map(post => {
-          return <PostEntry key={post.id} post={post} />
-        })}
+        posts.nodes.map(post => <PostEntry key={post.id} post={post} />)}
     </Layout>
   )
 }

@@ -73,22 +73,20 @@ const renderMenuItem = (menuItem, wpUrl) => {
   }
 }
 
-const renderSubMenu = (menuItem, wpUrl) => {
-  return (
-    <li
-      key={menuItem.label}
-      className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-100 menu-item-has-children"
-    >
-      <Link to="/">{menuItem.label}</Link>
-      <button className="submenu-expand" tabIndex="-1">
-        <ChevronDownIcon />
-      </button>
-      <ul className="sub-menu">
-        {menuItem.childItems.nodes.map(item => renderMenuItem(item, wpUrl))}
-      </ul>
-    </li>
-  )
-}
+const renderSubMenu = (menuItem, wpUrl) => (
+  <li
+    key={menuItem.label}
+    className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-100 menu-item-has-children"
+  >
+    <Link to="/">{menuItem.label}</Link>
+    <button className="submenu-expand" tabIndex="-1">
+      <ChevronDownIcon />
+    </button>
+    <ul className="sub-menu">
+      {menuItem.childItems.nodes.map(item => renderMenuItem(item, wpUrl))}
+    </ul>
+  </li>
+)
 
 const Menu = () => (
   <StaticQuery

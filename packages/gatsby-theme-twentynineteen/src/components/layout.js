@@ -10,7 +10,7 @@ const Layout = ({ children, classNames }) => (
     <a className="skip-link screen-reader-text" href="#content">
       Skip to content
     </a>
-    <Header siteTitle={"M2 Blog"} />
+    <Header siteTitle={`M2 Blog`} />
     <div id="content" className="site-content">
       <section id="primary" className="content-area">
         <main id="main" className="site-main">

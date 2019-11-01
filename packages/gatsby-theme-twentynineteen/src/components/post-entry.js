@@ -26,8 +26,8 @@ const PostEntry = ({
 
     // so that a word is not chopped off halfway
     excerptText = content
-      .substr(0, Math.min(excerptText.length, excerptText.lastIndexOf(" ")))
-      .concat("...")
+      .substr(0, Math.min(excerptText.length, excerptText.lastIndexOf(` `)))
+      .concat(`...`)
   }
   return (
     <article

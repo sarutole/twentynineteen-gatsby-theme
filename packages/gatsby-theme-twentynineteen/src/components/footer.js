@@ -8,6 +8,7 @@ const Footer = props => (
     <aside className="widget-area" aria-label="Footer">
       <div className="widget-column footer-widget-1">
         <RecentPostsWidget />
+
         <CategoriesWidget />
       </div>
     </aside>
@@ -17,7 +18,7 @@ const Footer = props => (
       <Link className="site-name" to="/" rel="home">
         Twenty Nineteen Gatsby Theme
       </Link>
-      ,{" "}
+      ,{` `}
       <a href="https://GatsbyWPThemes.com/" className="imprint">
         Proudly powered by GatsbyWPThemes.com
       </a>

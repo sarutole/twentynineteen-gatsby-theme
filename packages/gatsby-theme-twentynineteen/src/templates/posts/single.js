@@ -57,7 +57,8 @@ const SinglePost = props => {
                 <span className="meta-nav" aria-hidden="true">
                   Previous Post
                 </span>
-                <span className="screen-reader-text">Previous post:</span>{" "}
+                <span className="screen-reader-text">Previous post:</span>
+                {` `}
                 <br />
                 <span
                   className="post-title"

@@ -2,16 +2,16 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 
 const RECENT_POSTS_QUERY = graphql`
-query GetRecentPosts {
-  wpgraphql {
-    posts(first: 5) {
-      nodes {
-        title
-        slug
+  query GetRecentPosts {
+    wpgraphql {
+      posts(first: 5) {
+        nodes {
+          title
+          slug
+        }
       }
     }
   }
-}
 `
 
 const RecentPostsWidget = () => (

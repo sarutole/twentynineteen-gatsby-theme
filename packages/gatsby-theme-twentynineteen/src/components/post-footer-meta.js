@@ -19,10 +19,7 @@ const PostFooterMeta = ({ author, date, categories, tags, uri }) => (
     </span>
     <span className="posted-on">
       <DateIcon />
-      <Link
-        to={`blog/${uri}`}
-        rel="bookmark"
-      >
+      <Link to={`blog/${uri}`} rel="bookmark">
         <time
           className="entry-date published updated"
           dateTime="2019-02-25T17:37:06+00:00"
@@ -44,9 +41,10 @@ const PostFooterMeta = ({ author, date, categories, tags, uri }) => (
             {category.name}
           </Link>
         ))
-        .reduce((accu, elem) => {
-          return accu === null ? [elem] : [...accu, ", ", elem]
-        }, null)}
+        .reduce(
+          (accu, elem) => (accu === null ? [elem] : [...accu, `, `, elem]),
+          null
+        )}
     </span>
     <span className="tags-links">
       <TagIcon />
@@ -57,9 +55,10 @@ const PostFooterMeta = ({ author, date, categories, tags, uri }) => (
             {tag.name}
           </Link>
         ))
-        .reduce((accu, elem) => {
-          return accu === null ? [elem] : [...accu, ", ", elem]
-        }, null)}
+        .reduce(
+          (accu, elem) => (accu === null ? [elem] : [...accu, `, `, elem]),
+          null
+        )}
     </span>
   </footer>
 )

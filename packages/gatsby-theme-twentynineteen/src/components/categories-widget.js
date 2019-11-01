@@ -26,7 +26,9 @@ const CategoriesWidget = () => (
             {categories.nodes.length
               ? categories.nodes.map(category => (
                   <li key={category.slug}>
-                    <Link to={`/blog/category/${category.slug}`}>{category.name}</Link>
+                    <Link to={`/blog/category/${category.slug}`}>
+                      {category.name}
+                    </Link>
                   </li>
                 ))
               : null}

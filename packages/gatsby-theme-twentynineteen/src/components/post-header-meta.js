@@ -16,13 +16,11 @@ const PostHeaderMeta = ({ title, author, date, uri }) => (
             {author.name}
           </Link>
         </span>
-      </span>{" "}
+      </span>
+      {` `}
       <span className="posted-on">
         <DateIcon />
-        <Link
-          to={`blog/${uri}`}
-          rel="bookmark"
-        >
+        <Link to={`blog/${uri}`} rel="bookmark">
           <time
             className="entry-date published updated"
             dateTime="2019-02-04T15:34:08+00:00"
