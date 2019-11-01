@@ -78,11 +78,11 @@ module.exports = async ({ actions, graphql }) => {
    */
   const { createPage } = actions
 
-  const fetchPosts = async variables => {
+  const fetchPosts = async variables =>
     /**
      * Fetch posts using the GET_POSTS query and the variables passed in.
      */
-    return await graphql(GET_POSTS, variables).then(({ data }) => {
+    await graphql(GET_POSTS, variables).then(({ data }) => {
       /**
        * Extract the data from the GraphQL query results
        */
@@ -149,7 +149,6 @@ module.exports = async ({ actions, graphql }) => {
        */
       return allPosts
     })
-  }
 
   /**
    * Kick off our `fetchPosts` method which will get us all

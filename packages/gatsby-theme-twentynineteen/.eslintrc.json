@@ -3,13 +3,19 @@
   "extends": [
     "google",
     "eslint:recommended",
-    "plugin:flowtype/recommended",
+    //    "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "prettier",
-    "prettier/flowtype",
-    "prettier/react"
+    //    "prettier/flowtype",
+    "prettier/react",
+    "plugin:jsx-a11y/recommended"
   ],
-  "plugins": ["flowtype", "prettier", "react"],
+  "plugins": [
+    /*"flowtype", */
+    "prettier",
+    "react",
+    "jsx-a11y"
+  ],
   "parserOptions": {
     "ecmaVersion": 2016,
     "sourceType": "module",
@@ -70,7 +76,7 @@
   ],
   "settings": {
     "react": {
-      "version": "16.4.2"
+      "version": "16.11.0"
     }
   }
 }

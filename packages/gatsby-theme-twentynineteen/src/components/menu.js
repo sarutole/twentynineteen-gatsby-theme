@@ -14,10 +14,8 @@ const MENU_QUERY = graphql`
 
   query GET_MENU_ITEMS {
     site {
-      _xexperimentalThemes {
-        options {
-          wordPressUrl
-        }
+      siteMetadata {
+        wordPressUrl
       }
     }
     wpgraphql {
@@ -92,7 +90,7 @@ const Menu = () => (
   <StaticQuery
     query={MENU_QUERY}
     render={({ wpgraphql, site }) => {
-      const wpUrl = site._xexperimentalThemes[0].options.wordPressUrl
+      const wpUrl = site.siteMetadata.wordPressUrl
       if (wpgraphql.menuItems) {
         return (
           <nav

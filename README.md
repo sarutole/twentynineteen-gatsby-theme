@@ -1,9 +1,11 @@
-# Twenty Nineteen Gatsby Theme
+# Twenty Nineteen Gatsby Theme _with [Theme UI](https://theme-ui.com/) enabled_.
+
 A port of the Twenty Nineteen WordPress Theme over to Gatsby. Check out the [demo site](https://twentynineteen-gatsby-theme.netlify.com).
 
 This repo contains the source code for a site using the above [Gatsby theme](https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/).
 
 ## How to use this repo
+
 ```
 # Clone the repo
 git clone https://github.com/zgordon/twentynineteen-gatsby-theme.git
@@ -21,12 +23,14 @@ yarn start
 If this is your first time using Yarn workspaces, [check out the docs](https://yarnpkg.com/lang/en/docs/workspaces/).
 
 ## Links and further reading
+
 - https://gatsbywpthemes.com/
 - https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/
 - https://javascriptforwp.com/porting-the-twenty-nineteen-wordpress-theme-to-gatsby/
 - https://wordpress.tv/2018/02/26/jason-bahl-wpgraphql-interacting-with-wordpress-data-in-a-new-way/
 
 ## Team members
+
 - https://twitter.com/zgordon
 - https://twitter.com/muhsinlk
 - https://twitter.com/jasonbahl

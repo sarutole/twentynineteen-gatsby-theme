@@ -1,10 +1,16 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+// import React from "react"
 import RecentPostsWidget from "./recent-posts-widget"
 import CategoriesWidget from "./categories-widget"
 import { Link } from "gatsby"
 
 const Footer = props => (
-  <footer id="colophon" className="site-footer">
+  <footer
+    id="colophon"
+    className="site-footer"
+    sx={{ p: 5, backgroundColor: `white` }}
+  >
     <aside className="widget-area" aria-label="Footer">
       <div className="widget-column footer-widget-1">
         <RecentPostsWidget />
